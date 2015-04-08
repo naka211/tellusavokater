@@ -1,0 +1,181 @@
+/* ============================================================================= CONFIG FOR WEBSITE ========================================================================== */
+/* Default font settings. The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body {font-family: 'Raleway', sans-serif; color: #7e7e7e; }
+h1, h2, h3, h4, h5, h6  {font-weight: normal; color: #54890e;} 
+h2 {font-size: 18px;}
+h2 a {color: #54890e;}
+a:hover {text-decoration: none;}
+p {line-height: 1.6em;}
+
+/** SETING PAGE **/
+#page { width: 100%; background-color: #fff;} 
+ /** html.mm-opening .mm-page { left: 85%!important;}  ***only for SETTING Nav Menu Left  (! ImportantJS)**/ 
+.mm-menu > .mm-panel { padding: 0 15px 15px 15px !important; } 
+.mm-list > li > a, .mm-list > li > span { text-transform: uppercase;}
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after {margin-left: 0;}
+
+.banner-box {margin-bottom: 20px;}
+.banner-box img { max-width: none; width: 100%;}
+/**SETTING  **/
+#page nav {	display: none; } 
+#content { width: 100%;clear: both; margin: 0em auto 0em auto; padding-top: 4.8em;  } 
+.divlogomn { width: 70%; margin:   0 auto 0.5em auto;  display: block; text-align: center;max-width: 175px;}	
+.divlogomn img { width: 65%; max-width: 214px;}
+.divWrapAll .btnmn { margin-top: 1.5em} 
+.btnmn a { display: inline-block;width: 49%; background: #6b4a1e; text-align: center; line-height:  2.4em; height: 2.4em; color: #fff;font-size: 1.3em;text-decoration: none;
+			-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px; }
+ 			
+a.btnActive { background: #4c3515;}
+.btnCate { float: right;}
+.divWrapAll ul.ulMenu,.divWrapAll ul.ulCate {padding-top: 0.5em;} 
+
+/**SETTING BUTTON BACIS */
+.btn {background: #54890e; color: #fff !important; padding: 0.6em 1em;display: inline-block;text-align: center;font-size: 1.15em; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px; display: block; margin: 10px 0;}
+.btn:hover { text-decoration: none;}
+.btnShopnow {border-radius: 4px;font-size: 1em;margin-top: 0.5em;}
+.txtInput, .input, .txtArea, .textarea { padding: 0.25em 0.5em;margin-top: 0.3em;  width: 90%; max-width: 260px; border: 1px solid #c8c3af; background: #fff;color: #5a5a5a; background: #fff; border-radius: 0;}
+.txtArea, .textarea  { height: 6em;  }
+/**SETTING Header**/ 
+#header {z-index: 99999;  font-size: 16px; font-weight: bold; color: #fff; text-align: center;line-height: 40px; padding: 0 0 0 3%; width: 100%; background: #76a13e;}
+#header a.bntMenuleft {display: inline-block; float: right; width: 19%; max-width: 100px; min-height: 100%; text-align: center; padding: 1.5em 0.6em;}
+#header .bntMenuleft img  { max-width: 100%;   }
+.logo { float: left; width: 22%; max-width: 100px;top: 0;left: 0.3em; margin-top: 10px;}
+.logo img { max-width: 100%;}  
+.headright { float: right; width: 78%;height: 100%;}
+.btnShopbag, .bntMenuleft { width: 20%; float: left; border-left: 1px solid #91b465; height: 100%;height: 100%; text-align: center; }
+.bntFowllow img , .btnShopbag img, .btniconAddwish img { max-width: 48%; clear: both; margin-top: 0.6em;} 
+.btnShopbag .textbt{ font-size: 0.3em;font-family: 'Open Sans', sans-serif; text-transform: uppercase; color: #fff;
+display: block;line-height: 1em;margin-top: -2.5em; width: 100%; text-align: center;}
+.btnShopbag {  height: 100%; position: relative;}
+.btnShopbag .nummber {position: absolute;top: 35.5%;left: 0;display: inline;line-height: 1.2em;width: 100%; color: #916429; font-size: 0.9em;}
+ 
+#logo {padding-top: 55px; text-align: center;padding-bottom: 0.5em; }
+#logo div { display: inline-block; vertical-align: middle;}
+#logo .divlogo { width: 50%; float: left; text-align: left;}
+#logo .divlogo img {  width: 100% ;max-width: 214px;margin-top: 5%;}
+#logo .divcontrol {width: 18%; float: right; text-align: right;}
+#logo .divcontrol img { max-width: 60px;}
+
+.eachBox { width: 96%; margin: 0 auto; overflow: hidden;} /** Don't fix this line nhe! ( nó dùng chung cho all pages)**/
+.undepages { margin-bottom: 1em;} 
+img { max-width: 100%;}
+.undepages  h2 { margin: 0.3em 0; text-transform: uppercase;}
+.undepages h4 { font-size: 1em;  font-weight: normal;  line-height: 1.4em; margin-top: 0.5em;}
+.news {margin: 0.5em auto 1em auto;}
+.news h1 {  color: #a08262; text-transform: uppercase; font-weight: normal;}
+
+/**CSS FOOTER***/ 
+#footer {background: #f5f5f5; padding: 20px 0}
+#footer .links h3 {text-transform: uppercase; font-weight: bold; font-size: 26px; margin: 30px 0 13px; padding-bottom: 0.6em; font-style: italic;} 
+#footer .links .col p { line-height: 1.6em;}
+.links .col-1 { float: left; width: 45%;  text-align: left;}
+.links .col-2 { float: right; width: 45%;  text-align: left;}
+.text-center {text-align: center;}
+#footer .eachBox { margin-top: 0.2em; padding-top: 0.5em;}
+#footer a {color: #54890e;}
+
+.box {border: 1px solid #000; padding: 15px; margin: 20px 0;}
+.box .box-left {width: 65%; float: left;}
+.box .box-right {width: 30%; float: right;}
+.iconVideo {background: url(../img/iconPlay.png) no-repeat left center; padding: 10px 10px 10px 50px; display: block; margin-top: 10px; color: #578d06;}
+.search {margin: 15px 0 25px;}
+.search h3 {margin-bottom: 10px; color: #000;}
+.search input {width: 89%; float: left; padding: 6px 10px;}
+.search .btnSearch {width: 10%; float: right; background: #54890e url(../img/iconSearch.png) no-repeat center center; padding: 9.5px 10px; text-indent: -99999px; display: block;}
+.news-item {border-bottom: 1px dotted #b2b2b2; padding: 10px 0;}
+.news-item a:hover {color: #54890e;}
+.date {color: #999;}
+.uppercase {text-transform: uppercase; color: #54890e;}
+.black {color: #000;}
+.advice {margin: 15px 0;}
+.advice-left {width: 68%; float: left; border: 1px solid #000; padding: 15px; min-height: 204px;}
+.advice-right {width: 30%; float: right; border: 2px solid #000;}
+.btnNewslettter {-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: #f5f5f5; -webkit-box-shadow: inset 0 -3px #e9e9e9; -moz-box-shadow: inset 0 -3px #e9e9e9; box-shadow: inset 0 -3px #e9e9e9; display: block; padding: 10px; text-align: center; margin-bottom: 20px;}
+.w-search input {border: 7px solid #54890e; width: 100%; padding: 10px; }
+.w-search {position: relative;}
+.w-search .btnGo {position: absolute; right: 15px; top: 12px; background: url(../img/iconSearch2.png) no-repeat center center; width: 27px; height: 27px;}
+.fl {float: left;} .fr {float: right;}
+.iconDown {background: url(../img/iconDown.png) no-repeat; width: 26px; height: 27px; float: right;}
+.iconUp{background: url(../img/iconUp.png) no-repeat; width: 26px; height: 27px; float: right;}
+.cate-item {margin-bottom: 15px; -webkit-border-radius: 0 0 6px 6px; border-radius: 0 0 6px 6px; background-color: #54890e; padding: 10px 0; margin-top: -35px;}
+.w-cate h2 {-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: #54890e; padding: 10px 20px; margin-bottom: 15px}
+.w-cate h2 a:hover span {color: #000;}
+.w-cate h2 span {color: #fff;}
+.w-cate h2.active span.iconDown {background: url(../img/iconUp.png) no-repeat; width: 26px; height: 27px; }
+.w-cate {margin: 15px 0;}
+.cate-item ul {padding-left: 20px;}
+.cate-item ul li a {display: block; padding: 7px 0; color: #fff !important;}
+.action {display: block; float: right;}
+.mb20 {margin-bottom: 20px;} .mt20 {margin-top: 20px;} .mt15 {margin-top: 15px;} .mb10 {margin-bottom: 10px;} .d-block {display: block;} .mb5 {margin-bottom: 5px;}
+.asked-question {margin-top: 20px;}
+.btn2 {-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: #f5f5f5; -webkit-box-shadow: inset 0 -3px #e9e9e9; -moz-box-shadow: inset 0 -3px #e9e9e9; box-shadow: inset 0 -3px #e9e9e9; display: block; padding: 10px; text-align: center; margin-bottom: 10px;}
+.face {border-top: 1px dotted #b2b2b2; border-bottom: 1px dotted #b2b2b2; padding: 15px 0 5px; margin-bottom: 15px;}
+.face-left {width: 30%; float: left;}
+.face-right {width: 70%; float: right; padding-left: 20px; text-align: left;}
+.contact {padding: 15px 0 0;}
+.contact .frm-contact {margin: 15px 0;}
+.frm-contact input {width: 100%; display: block; padding: 8px 10px; margin-bottom: 10px; margin-top: 5px; border: 1px solid #a9a9a9;}
+.frm-contact textarea {width: 100%; height: 175px; display: block; padding: 8px 10px; margin-bottom: 10px; margin-top: 5px; border: 1px solid #a9a9a9;}
+.btnSend {background: #54890e; color: #fff; padding: 0.6em 1em;display: inline-block;text-align: center;font-size: 1.15em; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px; display: block; width: 49%; float: left; margin-top: 5px; cursor: pointer;}
+.btnSlet {float: right; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; background-color: #f5f5f5; -webkit-box-shadow: inset 0 -3px #e9e9e9; -moz-box-shadow: inset 0 -3px #e9e9e9; box-shadow: inset 0 -3px #e9e9e9; display: block; padding: 0.7em 0; text-align: center; width: 49%; margin-top: 5px; cursor: pointer;}
+.news {margin-bottom: 15px; margin-top: 15px;}
+.template {margin: 20px 0;}
+.template h4 {color: #000; margin: 15px 0 10px; font-size: 16px;}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+.breadcrumb li {
+    display: inline-block;
+}
+.breadcrumb > li + li::before {
+    color: #ccc;
+    content: "/ ";
+    padding: 0 5px;
+}
+
+/********** ---------------------- CSS MOBILE & TABEL FORM HERE ----------------------------- CSS MOBILE & TABEL FORM HERE  ------------------- **********/ 
+
+@media only screen and (max-width:  320px)  {/** Only iPhone 5 in portrait   **/
+	.bntMenuleft { width: 30% !important;}
+	#header {height: 70px;}
+}
+@media only screen and (min-width:  321px)  {/** All devices > 321px  **/
+	#header  { height: 70px;}  
+	#logo {padding-top: 60px; }
+
+ /* Dont set css here*/
+} /*End  iPhone 5 in portrait  */
+
+@media only screen and (min-width: 480px)  {/**  iPhone 4 in landscape  480(4) much**/
+	body {font-size: 0.85em;} 
+	#header  { height: 80px;}
+	#logo {padding-top: 60px;}
+	#logo img {max-width: 45%; max-width: 210px; margin: 0.5em auto;} 
+	.wrapSearch .txtip  { font-size: 0.7em;}
+	#footer .links h3 { font-size: 0.85em;}
+	
+}
+
+@media only screen and (min-width: 568px)   {	/**  iPhone 5 in landscape  568(5)  **/  	
+	.wrapSearch .txtip {font-size: 0.8em;}
+} /*End  iPhone 5 in landscape   */
+
+
+@media only screen and (min-width: 600px)   {	/**  Small Tablet  600/Portrait  **/  	
+ 
+ } /**  Small Tablet  600/Portrait   **/
+
+@media only screen and (min-width: 768px)   { 	/**  Tables/Ipad Portrait    **/  	
+	#header {height: 80px;} 
+	#logo {padding-top: 70px;}
+	#logo .divlogo img { margin-top: 0.5em;}
+	.advice-right {min-height: 204px;}
+} /* End Tables/Ipad Portrait   */
+
+@media (max-width: 768px) {
+	.search .btnSearch {background-size: 50%;}
+	.advice-right {min-height: 204px;}
+	#footer .links h3 { font-size: 0.85em;}
+}
