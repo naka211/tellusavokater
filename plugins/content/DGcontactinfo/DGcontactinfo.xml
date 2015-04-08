@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="1.6" group="content">
+	<name>Digital Greys Contact Info Plugin 2.5.1</name>
+	<author>Edward Cupler</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright 2011-2013 Digital Greys</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>ecupler@digitalgreys.com</authorEmail>
+	<authorUrl>http://www.digitalgreys.com</authorUrl>
+	<version>2.5</version>
+	<description>PLG_CONTENT_DGCONTACTINFO_XML_DESC</description>
+	<files>
+		<filename plugin="DGcontactinfo">DGcontactinfo.php</filename>
+		<folder>includes</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_DGcontactinfo.ini</language>
+		<language tag="en-GB">en-GB.plg_content_DGcontactinfo.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field name="linkToContact"
+					type="radio"
+					default="1"
+					description="PLG_CONTENT_DGCONTACT_LINKTOCONTACT_DESC"
+					label="PLG_CONTENT_DGCONTACT_LINKTOCONTACT_LABEL">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="linkImgToContact"
+					type="radio"
+					default="1"
+					description="PLG_CONTENT_DGCONTACT_LINKIMGTOCONTACT_DESC"
+					label="PLG_CONTENT_DGCONTACT_LINKIMGTOCONTACT_LABEL">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="newWindow"
+					type="radio"
+					default="1"
+					description="PLG_CONTENT_DGCONTACT_NEWWINDOW_DESC"
+					label="PLG_CONTENT_DGCONTACT_NEWWINDOW_LBL">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="imgAspectRatio"
+					type="radio"
+					default="1"
+					description="PLG_CONTENT_DGCONTACT_IMGASPECTRATIO_DESC"
+					label="PLG_CONTENT_DGCONTACT_IMGASPECTRATIO_LBL">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="DGimageSize" type="list" default="250" label="THUMB_SIZE_LBL" description="THUMB_SIZE_DESC">
+					<option value="0">USE_IMG_SIZE_OPT</option>
+					<option value="25">25_PIXELS_SQUARE_OPT</option>
+					<option value="35">35_PIXELS_SQUARE_OPT</option>
+					<option value="50">50_PIXELS_SQUARE_OPT</option>
+					<option value="75">75_PIXELS_SQUARE_OPT</option>
+					<option value="100">100_PIXELS_SQUARE_OPT</option>
+					<option value="125">125_PIXELS_SQUARE_OPT</option>
+					<option value="150">150_PIXELS_SQUARE_OPT</option>
+					<option value="175">175_PIXELS_SQUARE_OPT</option>
+					<option value="200">200_PIXELS_SQUARE_OPT</option>
+					<option value="225">225_PIXELS_SQUARE_OPT</option>
+					<option value="250">250_PIXELS_SQUARE_OPT</option>
+					<option value="300">300_PIXELS_SQUARE_OPT</option>
+					<option value="350">350_PIXELS_SQUARE_OPT</option>
+					<option value="400">400_PIXELS_SQUARE_OPT</option>
+					<option value="450">450_PIXELS_SQUARE_OPT</option>
+					<option value="500">500_PIXELS_SQUARE_OPT</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

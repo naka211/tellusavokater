@@ -1,0 +1,72 @@
+#mod-search-searchword{
+float:left;
+}
+
+.NewsListLarge {
+margin-bottom: 20px;
+}
+
+#AboutUsText h3{
+margin-bottom: 20px;
+}
+
+.pager li {
+display: inline;
+padding-right: 10px;
+}
+
+.pager.pagenav {
+margin-left: -40px;
+}
+
+.pagination li {
+display: inline;
+padding: 5px;
+}
+#search-searchword {
+height: 22px;
+}
+.subsearch {
+margin-left: -31px;
+margin-bottom: -7px;
+}
+.phrases {
+margin-top: 10px;
+}
+
+.only{
+margin-top: 10px;
+}
+
+.form-limit{
+margin-top: 10px;	
+}
+
+ul.list-striped {
+margin-left: -20px;
+}
+
+ul.list-striped li {
+margin-top: 10px;
+}
+
+.searchintro {
+margin-top: 10px;
+}
+
+
+#TopContent{
+position: relative;
+}
+
+#SubMenu_levelThree h3{
+color: #548b3e;
+font-size: 15px;
+font-weight: 300;
+margin: 0px;
+padding: 0px;
+}
+
+ul.breadcrumb {list-style: none; padding-left: 0;}
+ul.breadcrumb li {display: inline-block; margin-right: 5px;}
+.divider{margin-left: 5px;}

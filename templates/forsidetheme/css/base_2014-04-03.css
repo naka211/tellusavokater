@@ -1,0 +1,100 @@
+body, td, input, select, textarea {
+    font-family: "futura-pt";
+    font-size: 13px;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    border: 0px;
+}
+input.std, select.std, textarea.std {
+    width: 250px;
+    background-color: #fff;
+    border: #CCC 1px solid;
+}
+input.error, select.error, textarea.error {
+    width: 250px;
+    background-color: #fff;
+    border: #900 1px solid;
+}
+
+h1{
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	font-size: 15px;
+	font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+h4{
+	font-size: 11px;
+	font-weight: bold;
+	color: #548b3e;
+	margin: 0px;
+	padding: 0px;
+}
+
+h5{
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+a{
+	color: #54890e;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+#ErrorContainer{
+	margin-bottom: 10px;
+	
+}
+
+.ui-widget ul li a{
+	font-size: 12px;
+	
+}
+
+
+.jquery-button {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #f5f5f5;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #4c4c4c !important;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 200;
+    padding: 8px 8px;
+    width: 215px;
+    margin-bottom: 5px;
+}
+
+.jquery-button:hover {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #54890e;
+	color: #ffffff !important;
+}
+

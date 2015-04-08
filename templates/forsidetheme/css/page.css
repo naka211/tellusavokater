@@ -1,0 +1,347 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	/*background: #f5f5f5;*/
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0px auto;
+}
+
+/*.menuwapper{
+width: 960px;
+margin: 0 auto;
+}*/
+
+.inner_wrapper{
+	width: 560px;
+	margin: 0px auto;
+}
+
+#TopGreenBar{
+/*	height: 90px;*/
+	width: 100%;
+	background: url('../images/green_faded_background.png') repeat;
+}
+
+.logo{
+	float: left;
+	width: auto;
+	height: 90px;
+}
+
+#Overlay {
+    background: url('../images/image_overlay.png') left bottom scroll no-repeat;
+    margin: 0px;
+	padding: 0px;
+	height: 420px;
+	/*height: 490px;*/
+}
+
+/*#ImageRaster {
+    background: url('../images/raster.png') left top scroll repeat;
+    margin: 0px;
+	padding: 0px;
+	height: 420px;
+	/*height: 490px;
+}*/
+
+#TemplateContent{
+	min-height: 340px;
+	background: #fff;
+	position: relative;
+}
+
+#AboutUsText{
+	background: url("../images/news_right_stroke.png") right top no-repeat;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 30px;
+	margin-right: 10px;
+	width: 350px;
+	min-height: 305px;
+	float: left;
+}
+
+#ContentText{
+	/*background: url("../images/news_right_stroke.png") left top no-repeat;*/
+	padding-top: 25px;
+	padding-left: 20px;
+	margin-left: 240px;
+	width: 420px;
+	min-height: 455px;
+	float: left;
+}
+
+
+
+#VideoAndNewsletter{
+	width: 270px;
+	padding-left: 10px;
+	float: left;
+	/*position: absolute;
+	right: 0px;
+	top: -140px;*/
+}
+
+#NewsLetter{
+	position: absolute;
+	top: 225px;
+	left: 70px;
+}
+
+#NewsLetterSubpage{
+	position: relative;
+	left: 30px;
+	top: -1px;
+}
+
+.shortcuts p{
+	margin: 0px;
+	padding: 0px;
+} 
+
+
+#BottomContent {
+	padding-top: 30px;
+	height: 120px;
+	background: #f5f5f5;
+}
+
+.bottom_bg{
+	background: url("../images/bottom_grey.png") center top;
+	height: 30px;
+} 
+
+
+#SearchBox {
+	background: #54890e;
+	position: absolute;
+	left: 10px;
+	top: -120px;
+	width: 208px;
+	padding-left: 7px;
+	padding-top: 7px;
+	height: 31px;	
+}
+
+#SearchBox input[type="text"]{
+	width: 169px;
+	padding-left: 5px;
+	height: 22px;
+	border: 0px;
+	
+}
+
+/******************************************************************************
+* 
+* 	SUBMENU
+* 
+******************************************************************************/
+
+.SubMenuShadow {
+	background: url("../images/submenu_shadow.png") left top no-repeat;
+	width: 215px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 332px;
+	position: absolute;
+	top: -70px;
+}
+
+#SubMenu, #SubMenu_levelThree {
+	padding: 10px;
+	margin: 0px;
+	width: 195px;
+	min-height: 270px;
+	background: #54890e;
+	margin-bottom: 60px;
+}
+
+
+
+/******************************************************************************
+* 
+* 	MODULES CSS START
+* 
+******************************************************************************/
+
+#NewsContainer{
+	background: url("../images/news_right_stroke.png") right top no-repeat;
+	padding-top: 25px;
+	padding-right: 20px;
+	margin-right: 10px;
+	width: 240px;
+	min-height: 305px;
+	float: left;
+}
+
+#NewsContainer a, .NewsListLarge a{
+	color: #000;
+	text-decoration: none;	
+}
+
+#NewsContainer a:hover, .NewsListLarge a:hover{
+	color: #548b3e;
+	text-decoration: none;	
+}
+
+#NewsContainer_subpage{
+	background: url("../images/news_right_stroke.png") left top no-repeat;
+	padding-top: 25px;
+	padding-left: 30px;
+	margin-left: 10px;
+	width: 240px;
+	min-height: 305px;
+	float: right;
+}
+
+#NewsContainer_subpagefront{
+	padding-top: 25px;
+	padding-left: 30px;
+	margin-left: 10px;
+	width: 240px;
+	min-height: 305px;
+	float: right;
+}
+
+#NewsContainer_subpage a{
+	color: #000;
+	text-decoration: none;	
+}
+
+#NewsContainer_subpage a:hover{
+	color: #548b3e;
+	text-decoration: none;	
+}
+
+.NewsDevider{
+	background: url("../images/newsitems_spacer.png") left center repeat-x;
+	height: 25px;
+	
+}
+
+#NewsLetterContainer input[type="text"] {
+    margin-bottom: 8px;
+    width: 250px;
+}
+
+#FAQForm input[type="text"] {
+    margin-bottom: 8px;
+    width: 250px;
+}
+
+#FAQForm textarea {
+    width: 250px;
+    height: 70px;
+}
+
+/******************************************************************************
+* 
+* 	MODULES CSS END
+* 
+******************************************************************************/
+
+.adress{
+	margin-left: 35px;
+	margin-top: 10px;
+	font-size: 13px;
+	color: #424242;
+}
+
+.adress a{
+	color: #54890e;
+	text-decoration: none;
+}
+
+.adress a:hover{
+	color: #54890e;
+	text-decoration: underline;
+}
+
+
+/******************************************************************************
+* 
+* 	SPECIAL CSS
+* 
+******************************************************************************/
+
+.ui-dialog-title {
+	font-weight: 300;
+	
+}
+
+
+.jquery-button-inverted {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #54890e;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 200;
+    padding: 8px 8px;
+    width: 215px;
+    margin-bottom: 5px;
+}
+
+.jquery-button-inverted:hover {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #f5f5f5;
+	color: #4c4c4c !important;
+}
+
+
+.jquery-button {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #f5f5f5;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #4c4c4c !important;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 200;
+    padding: 8px 8px;
+    width: 215px;
+    margin-bottom: 5px;
+}
+
+.jquery-button:hover {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #54890e;
+	color: #ffffff !important;
+}
+
+
+.jquery-button-submit {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #f5f5f5;
+    border: medium none;
+    border-radius: 3px 3px 3px 3px;
+    color: #4c4c4c !important;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 200;
+    padding: 8px 8px;
+    width: auto;
+    margin-top: 5px;
+}
+
+.jquery-button-submit:hover {
+	background: url("../images/btn_shadow.png") repeat-x scroll center bottom #54890e;
+	color: #ffffff !important;
+}
+
+
+.ui-widget-header {
+	background: url("../images/ui-bg_highlight-soft_75_cccccc_1x100.png") repeat-x scroll center bottom!important;
+	color: #ffffff !important;
+}
+
+
+
+
+	
