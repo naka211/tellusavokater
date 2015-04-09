@@ -173,6 +173,7 @@ jQuery(document).ready(function($)
 		
 			<?php if(JUri::getInstance()->toString() != JUri::base()){?>
 			<!-- search box -->
+			<jdoc:include type="modules" name="position-5"/>
 			<jdoc:include type="modules" name="searchbox" style="xhtml" />
 			<?php }?>
 			
@@ -192,32 +193,34 @@ jQuery(document).ready(function($)
 			<?php if(JUri::getInstance()->toString() == JUri::base()){ ?>
 			<jdoc:include type="modules" name="position-2" style="xhtml" />
 			<?php }?>
-		
-			<!--<div class="box clearfix">
-				<div class="box-left">
-					<h2><a href="#">Gratis Familietjek</a></h2>
-					<p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
-					<p>Ring og bestil en gratis gennemgang!</p>
-					<a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a> </div>
-				<div class="box-right"> <img src="<?php echo $tmpl;?>img/img01.jpg" alt=""> </div>
-			</div>
-			<div class="box clearfix">
-				<div class="box-left">
-					<h2><a href="#">Gratis Familietjek</a></h2>
-					<p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
-					<p>Ring og bestil en gratis gennemgang!</p>
-					<a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a> </div>
-				<div class="box-right"> <img src="<?php echo $tmpl;?>img/img01.jpg" alt=""> </div>
-			</div>
-			<a class="btn" href="#">- Hent pjecer her</a>-->
-			<div class="advice clearfix">
-				<div class="advice-left">
-					<h2>Rådgivning til enker</h2>
-					<p>Vi er specialister i dødsbobehandling. Vi har fokus på den efterlevende partners situation og hjælper med at skabe de bedst mulige rammer for, at han/hun kan komme videre.</p>
+			
+			<?php  if(JUri::getInstance()->toString() != JUri::base()){ ?>
+			<jdoc:include type="component" />
+			<?php }?>
+			
+			<?php if(JUri::getInstance()->toString() != JUri::base()){ ?>
+				<?php if(isset($taginfo)&&!empty($taginfo)){
+	  
+				//for the tags information ?>
+				<div class="article-rightcolum">
+				<?php foreach ($taginfo as $key => $value) {?>
+				<div class="article-rightcolumtitle">
+				<?php // echo $value->title;?>
 				</div>
-				<div class="advice-right"> <img src="<?php echo $tmpl;?>img/img02.jpg" alt=""> </div>
-			</div>
-			<a class="btnNewslettter" href="newsletter.php">- Tilmeld nyhedsbrev</a> </div>
+				<div class="aricle-rightcolumcontent">
+				<?php echo $value->description;?>
+				</div>
+				<div class="NewsDevider" style="margin-top: 5px; margin-bottom: 5px;">&nbsp;</div>
+				<?php }?>
+				</div>
+				<?php }?>
+				<jdoc:include type="modules" name="position-1" style="xhtml" />
+			<?php }else{?>
+				<?php if ($this->countModules('position-14')) : ?>
+				 <jdoc:include type="modules" name="position-14"/>
+				<?php endif;?>
+			<?php }?>
+		</div>
 		<div id="footer">
 			<div class="eachBox links bottom-link">
 				<div class="col-1"> <img src="<?php echo $tmpl;?>img/logo2.png" alt="">
@@ -227,7 +230,7 @@ jQuery(document).ready(function($)
 				</div>
 				<!--col-1-->
 				<div class="col-2">
-					<h3>Jura på jysk</h3>
+					<h3><a href="index.php?option=com_sitemap&view=default&Itemid=206">Sitemap</a></h3>
 					<p>John Tranums Vej 25, 6705 Esbjerg Ø<br>
 						Tlf: 76 60 23 30<br>
 						Email: <a href="mailto:tellus@tellusadvokater.dk">tellus@tellusadvokater.dk</a></p>
@@ -235,7 +238,7 @@ jQuery(document).ready(function($)
 				<!--col-2-->
 				<div class="clearfix"></div>
 				<p class="text-center">Advokatanpartsselskab</p>
-				<a class="btn" href="#">- Gå til websiden</a> </div>
+				<a class="btn" href="<?php echo JURI::base();?>index.php?option=com_users&task=registration.set_mobile_session&value=0&url=<?php echo base64_encode(JURI::current());?>">- Gå til websiden</a> </div>
 			<!--eachBox bottom-links--> 
 		</div>
 		<!--End #footer--> 
