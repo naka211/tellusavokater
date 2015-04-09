@@ -36,7 +36,7 @@
                 <h2><a href="#">Gratis Familietjek</a></h2>
                 <p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
                 <p>Ring og bestil en gratis gennemgang!</p>
-                <a class="iconVideo" href="#">Se video</a>
+                <a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a>
               </div>
               <div class="box-right">
                 <img src="img/img01.jpg" alt="">
@@ -47,7 +47,7 @@
                 <h2><a href="#">Gratis Familietjek</a></h2>
                 <p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
                 <p>Ring og bestil en gratis gennemgang!</p>
-                <a class="iconVideo" href="#">Se video</a>
+                <a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a>
               </div>
               <div class="box-right">
                 <img src="img/img01.jpg" alt="">

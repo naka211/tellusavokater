@@ -6,7 +6,9 @@
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 <link type="text/css" rel="stylesheet" href="css/styles-moblie.css" />
+
 <script type='text/javascript' src="js/jquery-1.8.3.min.js"></script>
   
 <script type="text/javascript">
@@ -36,19 +38,14 @@ WebFontConfig = {
           $(this).next('.cate-item').fadeIn('normal');
           }
       });
-      /*$('.w-cate h2').hover(function(){//over
-          $('.iconDown').addClass('iconUp');
-      },function() {//out
-          $('.iconDown').removeClass('iconUp');
-      });*/
 
-      /*$('.w-cate h2').click (function(){
-          if($('.iconDown').hasClass('iconDown')) {
-            $('.iconDown').addClass('iconUp');
-          } else
-            $('.iconDown').removeClass('iconUp');
-          });*/
-
+      $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        helpers : {
+          media : {}
+        }
+      });
 
   });
 </script>
@@ -67,9 +64,13 @@ WebFontConfig = {
  });
 </script>;.
   
-<script type='text/javascript' src='js/jquery.min.js'></script>
+
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
 <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+
 <script type='text/javascript' src='js/tho.js'> </script> 
 
    

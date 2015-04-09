@@ -92,7 +92,7 @@ function createCookie(name, value, days) {
 	}
 	else var expires = "";
 	document.cookie = name + "=" + value + expires + "; path=/";
-}
+};
 
 /**
  * Get a cookie
@@ -110,4 +110,4 @@ function getCookie(c_name) {
 		}
 	}
 	return "";
-}
+};

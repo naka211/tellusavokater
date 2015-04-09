@@ -14,6 +14,13 @@
         </div><!--.banner-box-->
 
         <div class="eachBox"> 
+          <div class="w_breadcrumb"><!-- START: Modules Anywhere -->
+            <ul class="breadcrumb">
+              <li><a class="pathway" href="/filippa/">Forside</a></li>
+              <li class="active"><span>Nyhedsbrev</span></li>
+            </ul><!-- END: Modules Anywhere -->
+          </div>
+
           <div class="w-search">
             <input type="text" placeholder="Indtast søgeord her">
             <a class="btnGo" href="#"></a>

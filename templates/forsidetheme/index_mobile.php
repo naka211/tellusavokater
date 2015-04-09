@@ -46,6 +46,7 @@ if ($option == 'com_contact' && ($view == 'category' or $view == 'contact') && $
 <link rel="stylesheet" type="text/css" href="<?php echo $tmpl;?>css/reset.css">
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/jquery.mmenu.css" />
 <link type="text/css" rel="stylesheet" href="<?php echo $tmpl;?>css/styles-moblie.css" />
+<link rel="stylesheet" href="<?php echo $tmpl;?>fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
 <script type='text/javascript' src="<?php echo $tmpl;?>js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
 WebFontConfig = {
@@ -77,6 +78,9 @@ WebFontConfig = {
 </script>
 <!-- JS  MENU Top-Left jquery.mmenu.oncanvas.js-->
 <script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript" src="<?php echo $tmpl;?>fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="<?php echo $tmpl;?>fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="<?php echo $tmpl;?>fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 <script type="text/javascript">
  $(document).ready(function() {
     $("#menu-left").mmenu({ 
@@ -84,10 +88,17 @@ WebFontConfig = {
           position  : "right"
        }
     });
+	
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+		  media : {}
+		}
+	});
  });
 </script>
-;.
-<script type='text/javascript' src='<?php echo $tmpl;?>js/jquery.min.js'></script>
+<!--<script type='text/javascript' src='<?php echo $tmpl;?>js/jquery.min.js'></script>-->
 <script type='text/javascript' src='<?php echo $tmpl;?>js/jquery.mobile.customized.min.js'></script>
 <script type='text/javascript' src='<?php echo $tmpl;?>js/jquery.easing.1.3.js'></script>
 <script type='text/javascript' src='<?php echo $tmpl;?>js/tho.js'> </script>
@@ -150,41 +161,44 @@ jQuery(document).ready(function($)
 		<div class="headright"> <a href="#menu-left" class="bntMenuleft"><img src="<?php echo $tmpl;?>img/bntMenuleft.png"></a> </div>
 		<!--headright--> 
 	</div>
-	<div id="ppMap" style="display: none;">
-		<div class="wrap-pp wrapMap"> <img class="imgMap_demo" src="<?php echo $tmpl;?>img/map-mobile.jpg"> </div>
-		<!--wrap-cartcredit--> 
-	</div>
 	<!--ppCartcredit-->
 	<div id="content" class="w-content">
 		<div class="banner-box clearfix">
-			<div id="banner" class="clearfix"> <img src="<?php echo $tmpl;?>img/banner.jpg" alt=""> </div>
+			<div id="banner" class="clearfix"> <img src="<?php echo $tmpl;?>img/<?php if(JUri::getInstance()->toString() == JUri::base()){echo "forside" ;} else { echo "default" ;} ?>.jpg" alt=""> </div>
 			<!--#banner--> 
 		</div>
 		<!--.banner-box-->
 		
-		<div class="eachBox news">
-			<h2 class="black">Seneste nyt fra <span class="uppercase">TELLUS</span></h2>
-			<article class="news-item">
-				<p><strong><a href="#">Forskellen er stor på ejerskifteforsikringer</a></strong></p>
-				<p><a href="#">Advokat Marianne Rask har skrevet en artikel om hvad du skal sikre dig, når du tegner en ejerskifteforsikring. ..</a></p>
-				<p class="date">Oprettet d.11-03-2015</p>
-			</article>
-			<article class="news-item">
-				<p><strong><a href="#">Forskellen er stor på ejerskifteforsikringer</a></strong></p>
-				<p><a href="#">Advokat Marianne Rask har skrevet en artikel om hvad du skal sikre dig, når du tegner en ejerskifteforsikring. ..</a></p>
-				<p class="date">Oprettet d.11-03-2015</p>
-			</article>
-			<div class="search clearfix">
-				<h3>Søg efter indhold på hjemmesiden</h3>
-				<input type="text" placeholder="Indtast søgeord her">
-				<a class="btnSearch" href="#">Search</a> </div>
+		<div class="eachBox <?php if(JUri::getInstance()->toString() == JUri::base()){echo "news" ;}?>">
+		
+			<?php if(JUri::getInstance()->toString() != JUri::base()){?>
+			<!-- search box -->
+			<jdoc:include type="modules" name="searchbox" style="xhtml" />
+			<?php }?>
+			
+			<?php if(JUri::getInstance()->toString() == JUri::base()){ ?>
+			<jdoc:include type="modules" name="position-1" style="xhtml" />
 			<div class="line"><img src="<?php echo $tmpl;?>img/line.jpg" alt=""></div>
-			<div class="box clearfix">
+			<?php };?>
+			
+			 <?php if(JUri::getInstance()->toString() != JUri::base()){ ?>
+			<div class="SubMenuShadow">
+			<div id="SubMenu_levelThree">   
+			<jdoc:include type="modules" name="position-3" style="xhtml" />
+			  </div>
+			</div>
+			<?php };?>
+			
+			<?php if(JUri::getInstance()->toString() == JUri::base()){ ?>
+			<jdoc:include type="modules" name="position-2" style="xhtml" />
+			<?php }?>
+		
+			<!--<div class="box clearfix">
 				<div class="box-left">
 					<h2><a href="#">Gratis Familietjek</a></h2>
 					<p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
 					<p>Ring og bestil en gratis gennemgang!</p>
-					<a class="iconVideo" href="#">Se video</a> </div>
+					<a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a> </div>
 				<div class="box-right"> <img src="<?php echo $tmpl;?>img/img01.jpg" alt=""> </div>
 			</div>
 			<div class="box clearfix">
@@ -192,10 +206,10 @@ jQuery(document).ready(function($)
 					<h2><a href="#">Gratis Familietjek</a></h2>
 					<p>Har du de papirer i orden, som skal sikre dig og din familie i tilfælde af skilsmisse eller dødsfald?</p>
 					<p>Ring og bestil en gratis gennemgang!</p>
-					<a class="iconVideo" href="#">Se video</a> </div>
+					<a class="iconVideo fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Se video</a> </div>
 				<div class="box-right"> <img src="<?php echo $tmpl;?>img/img01.jpg" alt=""> </div>
 			</div>
-			<a class="btn" href="#">- Hent pjecer her</a>
+			<a class="btn" href="#">- Hent pjecer her</a>-->
 			<div class="advice clearfix">
 				<div class="advice-left">
 					<h2>Rådgivning til enker</h2>

@@ -31,7 +31,7 @@ class JConfig {
 	public $live_site = '';
 	public $force_ssl = '0';
 	public $offset = 'UTC';
-	public $lifetime = '15';
+	public $lifetime = '150';
 	public $session_handler = 'database';
 	public $mailer = 'mail';
 	public $mailfrom = 'tellus@tellusadvokater.dk';

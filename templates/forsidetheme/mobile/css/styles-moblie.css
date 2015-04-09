@@ -179,3 +179,8 @@ img { max-width: 100%;}
 	.advice-right {min-height: 204px;}
 	#footer .links h3 { font-size: 0.85em;}
 }
+
+.moduletable h2, .moduletable h3{color:black;}
+h3 {font-size: 18px;}
+h3 a {color: #54890e;}
+.jquery-button-inverted {width: 100%;}
