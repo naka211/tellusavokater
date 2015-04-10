@@ -157,7 +157,7 @@ jQuery(document).ready(function($)
 <meta property="og:image" content="http://www.tellusadvokater.dk/images/banners/tellusfb4.png" />
 </head><body>
 <div id="page">
-	<div id="header" class="mm-fixed-top"> <a href="index.php" class="logo"><img src="<?php echo $tmpl;?>img/logo.png"></a>
+	<div id="header" class="mm-fixed-top"> <a href="" class="logo"><img src="<?php echo $tmpl;?>img/logo.png"></a>
 		<div class="headright"> <a href="#menu-left" class="bntMenuleft"><img src="<?php echo $tmpl;?>img/bntMenuleft.png"></a> </div>
 		<!--headright--> 
 	</div>
@@ -182,11 +182,9 @@ jQuery(document).ready(function($)
 			<div class="line"><img src="<?php echo $tmpl;?>img/line.jpg" alt=""></div>
 			<?php };?>
 			
-			 <?php if(JUri::getInstance()->toString() != JUri::base()){ ?>
-			<div class="SubMenuShadow">
-			<div id="SubMenu_levelThree">   
+			 <?php if( (JUri::getInstance()->toString() != JUri::base()) && $this->countModules('position-3')){ ?>
+			<div class="w-moduletable">
 			<jdoc:include type="modules" name="position-3" style="xhtml" />
-			  </div>
 			</div>
 			<?php };?>
 			
@@ -244,7 +242,7 @@ jQuery(document).ready(function($)
 		<!--End #footer--> 
 	</div>
 	<!--End #content-->
-	<nav id="menu-left">
+	<!--<nav id="menu-left">
 		<div class="divWrapAll">
 			<ul class="ulMenu">
 				<li class="menu_active"><a href="index.php">FORSIDE</a></li>
@@ -257,7 +255,14 @@ jQuery(document).ready(function($)
 				<li><a href="newsletter.php">NYHEDER</a></li>
 			</ul>
 		</div>
+	</nav>-->
+	<?php if ($this->countModules('position-0')) : ?>
+	<nav id="menu-left">
+		<div class="divWrapAll">
+			<jdoc:include type="modules" name="position-0" style="xhtml" />
+		</div>
 	</nav>
+	<?php endif ; ?>
 	<script type="text/javascript">
 		$(document).ready(function(){	
 			$('.btnMenu').addClass("btnActive");
