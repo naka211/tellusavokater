@@ -349,6 +349,9 @@ margin-right: 24px;
       <div id="WhatWeAre" style="clear: both; letter-spacing: 3px; font-size: 12px; color: #999; height: 20px; text-align: center; width: 960px;">
         Advokatanpartsselskab
       </div>
+	  <?php if($detect->isMobile()){?>
+		<a class="btnGotosite" href="<?php echo JURI::base();?>index.php?option=com_users&task=registration.set_mobile_session&value=1&url=<?php echo base64_encode(JURI::current());?>">TIL MOBILSIDEN</a>
+		<?php }?>
     </div>
   </div>
   <script type="text/javascript">

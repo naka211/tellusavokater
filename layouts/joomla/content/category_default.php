@@ -23,7 +23,7 @@ if (substr($className, -1) == 's')
 }
 $tagsData  = $displayData->get('category')->tags->itemTags;
 ?>
-<div>
+<div class="template">
 	<div class="<?php echo $className .'-category' . $displayData->pageclass_sfx;?>">
 		<?php if ($params->get('show_page_heading')) : ?>
 			<h1>
