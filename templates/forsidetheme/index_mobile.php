@@ -41,6 +41,7 @@ if ($option == 'com_contact' && ($view == 'category' or $view == 'contact') && $
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <jdoc:include type="head" />
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php echo $tmpl;?>css/reset.css">
