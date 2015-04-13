@@ -85,6 +85,6 @@ class JConfig {
 	public $session_memcached_server_host = 'localhost';
 	public $session_memcached_server_port = '11211';
 	
-	public $show_phone = '1';
+	public $show_phone = '0';
 	public $enable_phone = '1';
 }

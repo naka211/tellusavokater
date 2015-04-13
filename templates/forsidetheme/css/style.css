@@ -70,3 +70,13 @@ padding: 0px;
 ul.breadcrumb {list-style: none; padding-left: 0;}
 ul.breadcrumb li {display: inline-block; margin-right: 5px;}
 .divider{margin-left: 5px;}
+.btnGotosite{
+	background: none repeat scroll 0 0 #54890e;
+    border-radius: 3px;
+    color: #fff !important;
+    display: block;
+    font-size: 1.15em;
+    margin: 10px 0;
+    padding: 0.6em 1em;
+    text-align: center;
+}
