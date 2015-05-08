@@ -341,17 +341,17 @@ margin-right: 24px;
           <p>Email: <a href="mailto:tellus@tellusadvokater.dk">tellus@tellusadvokater.dk</a></p>
         </div>
 
-        <div class="adress" style="float: left; margin-top: 26px; margin-left:36px!important; font-size: 15px; color: #54890E;">
-          <i><a href="index.php?option=com_sitemap&view=default&Itemid=206">Sitemap</a></i>
+        <div class="adress" style="float: left; margin-top: 8px; margin-left:22px!important; font-size: 15px; color: #54890E;">
+          <i><a href="index.php?option=com_sitemap&view=default&Itemid=206">Sitemap</a></i><br />
+		  <?php if($detect->isMobile()){?>
+		<i><a href="<?php echo JURI::base();?>index.php?option=com_users&task=registration.set_mobile_session&value=1&url=<?php echo base64_encode(JURI::current());?>">TIL MOBILSIDEN</a></i>
+		<?php }?>
         </div>
       </div>
 
       <div id="WhatWeAre" style="clear: both; letter-spacing: 3px; font-size: 12px; color: #999; height: 20px; text-align: center; width: 960px;">
         Advokatanpartsselskab
       </div>
-	  <?php if($detect->isMobile()){?>
-		<a class="btnGotosite" href="<?php echo JURI::base();?>index.php?option=com_users&task=registration.set_mobile_session&value=1&url=<?php echo base64_encode(JURI::current());?>">TIL MOBILSIDEN</a>
-		<?php }?>
     </div>
   </div>
   <script type="text/javascript">
